@@ -236,3 +236,15 @@ All commands are audited and reproducible on a full Zebra node.
 It is recommended to use an authorized user to execute critical commands (quicksend, shield).
 
 The bot output preserves the Zcash console aesthetics, using tags such as [INFO], [OK], [TIP].
+
+
+## **Try ZTip Bot**
+
+ZTip Bot is live and available for testing in the following channel:
+
+👉 https://t.me/zcashespchat
+
+Anyone can use the public commands such as /commands, /deposit, or /about.
+Sensitive commands require prior authorization (whitelist).
+
+
