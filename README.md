@@ -80,6 +80,9 @@ zebra@node:~$ awaiting input...
 
 #### **Public Command /deposit**
 
+> [!TIP]
+> Use `/t_address` or `/u_address` for quick mobile copy/paste of deposit addresses.
+
 ```bash
 
 zebra@node:~$ cat /etc/zebra/deposit_addresses.caro    
@@ -148,6 +151,11 @@ zebra@node:~$ [INFO] last 5 transactions loaded successfully [OK]
 zebra@node:~$
 ```
 #### **Command /zec quicksend**
+
+> [!CAUTION]
+> The bot executes **real transactions** on your Zingo wallet.  
+> Always double-check amounts and addresses before sending.
+
 Quickly sends ZEC to an address with an optional memo:
 ```bash
 ------------ SEND ==> ------------
@@ -171,6 +179,10 @@ zebra@node:~$ [OK] operation complete.
 ```
 #### **Command /zec shield**
 
+> [!CAUTION]
+> The bot executes **real transactions** on your Zingo wallet.  
+> Always double-check amounts and addresses before sending.
+
 Protects transparent funds by moving them to the unified address:
 
 ```bash
@@ -186,6 +198,9 @@ zebra@node:~$ [INFO] Run '/zec balance' to verify changes.
 ```
 
 #### **Command /about**
+
+> [!NOTE]
+> All system information shown in `/about` is pulled directly from your Lightwalletd server and node.
 
 Displays information about the system and the bot:
 
@@ -256,12 +271,22 @@ Sensitive commands require prior authorization (whitelist).
 
 ## Requirements (Before Installing)
 
-ZTip requires the complete Zcash stack: **Zebra + Lightwalletd + Zingo-CLI**
+> [!IMPORTANT]
+> ZTip **cannot run** without the full Zcash stack: **Zebra + Lightwalletd + Zingo-CLI**.  
+> Make sure all three are installed, running, and reachable.
 
-The bot will not function unless all three components are installed, running, and correctly configured.
+> [!CAUTION]
+> If `zingo-cli` or `lightwalletd` are misconfigured, the bot may send incorrect balances or fail transactions.
 
 
 ## How to Create the Configuration INI File
+
+> [!WARNING]
+> Never share your `config.ini`. It contains passwords, node access, and your Telegram bot token.
+
+> [!NOTE]
+> The bot reads `config.ini` on every startup. Any change requires restarting the bot.
+
 
 To run the bot, you need to create a configuration file named config.ini. This file tells the bot how to connect to your node, Telegram, and manage Zcash settings. Follow the template below and fill in your own information. Do not share this file publicly if it contains sensitive data.
 
