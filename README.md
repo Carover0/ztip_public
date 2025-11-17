@@ -378,10 +378,14 @@ python3 z‑f.py   # or whichever file is the main script
 ```
 ## **Authorized Users File**
 
+> [!WARNING]
+> Anyone listed in `allowed_users.json` can trigger sensitive wallet commands.  
+> Only add users you fully trust.
+
 The bot automatically creates allowed_users.json on first run if it doesn’t exist. You can pre-fill it with your admin ID:
 ```
 [
-  2138507839
+  123456789
 ]
 ```
 
@@ -396,6 +400,13 @@ Have admin access immediately if their Telegram ID is in allowed_users.json.
 ---
 
 ## Final Notes / Tips
+
+> [!TIP]
+> Keep your bot in a separate low-privilege user account on the server.
+
+> [!NOTE]
+> Every command executed by ZTip can be verified manually through Zebra or Zingo-CLI.
+
 
 1. Security First
 - Keep config.ini and allowed_users.json private. They contain sensitive credentials and access keys.  
@@ -413,6 +424,7 @@ Have admin access immediately if their Telegram ID is in allowed_users.json.
 - Visit: [ZcashEsp](https://zcashesp.com/)
 
 
-########################################################################  
+########################################################  
+> [!TIP]
+> Thanks for trying ZTip! Your feedback helps strengthen the Zcash ecosystem.
 
-**Thank you for trying ZTip and for paying attention to security and usage guidelines!**
