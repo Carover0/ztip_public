@@ -314,4 +314,30 @@ Save this template as config.ini.
 - Keep the file safe, especially the tokens, passwords, and keys.
 - Run the bot with this config.ini in the same directory.
 
+## **Steps to Clone the Repository**
+```
+# 1. Open a terminal on your machine or server
+# 2. (Optional) change to the folder where you want to keep the bot
+cd /path/to/your/bots
+
+# 3. Clone the repo
+git clone https://github.com/Carover0/ztip_public.git
+
+# 4. Change into the directory
+cd ztip_public
+
+# 5. (Optional) View latest commits or switch branch
+git log --oneline
+# E.g., if there’s a specific version tag:
+# git checkout <tag_or_branch>
+
+# 6. Install dependencies (assuming Python & pip are used)
+pip install -r requirements.txt
+
+# 7. Create or edit your config.ini according to the template
+# (fill in your node’s SSH, Zcash settings, bot token, etc.)
+
+# 8. Run the bot
+python3 z‑f.py   # or whichever file is the main script
+```
 
