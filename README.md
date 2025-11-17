@@ -247,4 +247,71 @@ ZTip Bot is live and available for testing in the following channel:
 Anyone can use the public commands such as /commands, /deposit, or /about.
 Sensitive commands require prior authorization (whitelist).
 
+---
+
+# **Install**
+
+How to Create the Configuration INI File
+
+To run the bot, you need to create a configuration file named config.ini. This file tells the bot how to connect to your node, Telegram, and manage Zcash settings. Follow the template below and fill in your own information. Do not share this file publicly if it contains sensitive data.
+
+```
+[SSH]
+# Your SSH node host (e.g., 123.45.67.89)
+HOST = 
+# SSH username
+USER = 
+# SSH password
+PASSWORD = 
+# Path to the Zebra log file
+LOG_PATH = ~/zeb_logs/zebrad_live.log
+
+[ZCASH]
+# Lightwallet server URL (e.g., https://lightwallet.example:9067)
+LIGHTWALLET_SERVER = 
+# Path to zingo-cli binary
+ZECWALLET_BINARY = 
+# Zingo data directory
+ZINGO_DATA_DIR = 
+# Number of zats per ZEC (usually 100000000)
+ZATS_PER_ZEC = 100000000
+
+[LOCAL]
+# Path to the local file used by the bot
+FILE_PATH = 
+
+[BOT]
+# Telegram bot token for the main bot
+BOT_TOKEN = 
+# Optional: Telegram bot token for testing
+TOKEN_PRUEBA = 
+
+[AGREGAR]
+# Optional: Key for adding features or users
+CLAVE = 
+
+[MASTER]
+# Telegram user ID of the admin
+ADMIN = 
+
+[ZINGO]
+# Zingo data directory (can be the same as ZINGO_DATA_DIR above)
+DATA_DIR = 
+
+[DEPOSITOS]
+# Blind deposit address
+BLINDADA = 
+# Transparent deposit address
+TRANS = 
+```
+
+Save this template as config.ini.
+- Replace each field with your own values:
+- SSH: information for connecting to your node.
+- ZCASH: your zingo-cli paths and lightwallet server.
+- BOT: Telegram bot tokens.
+- DEPOSITOS: your Zcash deposit addresses.
+- Keep the file safe, especially the tokens, passwords, and keys.
+- Run the bot with this config.ini in the same directory.
+
 
