@@ -19,11 +19,16 @@ Every command can be traced, reproduced, and manually verified, maintaining a 1:
 
 ## **Project Structure**
 
+> [!NOTE]
+> These are the only files the bot requires to operate.  
+> The structure remains minimal to preserve simplicity and transparency.
+```
 ztip_bot/  
-  │  
-  ├── z-f.py # Main bot file  
-  ├── allowed_users.json # List of authorized users  
-  └── bot.pid # Active process PID 
+│  
+├── z-f.py                # Main bot file  
+├── allowed_users.json    # List of authorized users  
+└── bot.pid               # Active process PID  
+```
 
 ## **Available Commands**
 #### **Main Commands**
