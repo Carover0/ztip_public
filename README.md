@@ -251,7 +251,14 @@ Sensitive commands require prior authorization (whitelist).
 
 # **Install**
 
-How to Create the Configuration INI File
+## Requirements (Before Installing)
+
+ZTip requires the complete Zcash stack: **Zebra + Lightwalletd + Zingo-CLI**
+
+The bot will not function unless all three components are installed, running, and correctly configured.
+
+
+## How to Create the Configuration INI File
 
 To run the bot, you need to create a configuration file named config.ini. This file tells the bot how to connect to your node, Telegram, and manage Zcash settings. Follow the template below and fill in your own information. Do not share this file publicly if it contains sensitive data.
 
