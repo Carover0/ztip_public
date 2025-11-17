@@ -26,7 +26,8 @@ Every command can be traced, reproduced, and manually verified, maintaining a 1:
 ztip_bot/  
 │  
 ├── z-f.py                # Main bot file  
-├── allowed_users.json    # List of authorized users  
+├── allowed_users.json    # List of authorized users
+├── config.ini            # basic configurations 
 └── bot.pid               # Active process PID  
 ```
 
