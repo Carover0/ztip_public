@@ -332,6 +332,7 @@ git log --oneline
 # git checkout <tag_or_branch>
 
 # 6. Install dependencies (assuming Python & pip are used)
+#Make sure Python 3.10+ is installed. Then, install required packages:
 pip install -r requirements.txt
 
 # 7. Create or edit your config.ini according to the template
@@ -340,4 +341,43 @@ pip install -r requirements.txt
 # 8. Run the bot
 python3 z‑f.py   # or whichever file is the main script
 ```
+## **Authorized Users File**
 
+The bot automatically creates allowed_users.json on first run if it doesn’t exist. You can pre-fill it with your admin ID:
+```
+[
+  2138507839
+]
+```
+
+With this, anyone cloning your repo can:
+
+- Install dependencies.
+- Configure config.ini.
+- Run the bot.
+
+Have admin access immediately if their Telegram ID is in allowed_users.json.
+
+---
+
+## Final Notes / Tips
+
+1. Security First
+- Keep config.ini and allowed_users.json private. They contain sensitive credentials and access keys.  
+- Never share your bot token or SSH password publicly.  
+2. Node Compatibility  
+- The bot is tested with Zebra, Lightwalletd, and Zingo-CLI. Other implementations may work but are not guaranteed.
+3. Auditable Operations
+- Every command replicates a real Zcash node operation. You can verify transactions manually via your node.
+4. Minimalist Design Philosophy
+- ZTip is intentionally text-based to reproduce the CLI experience. No graphical interface, no browser dependencies.
+5. Contributing
+- Pull requests are welcome. Make sure any code preserves the terminal-style aesthetic and secure operation flow.
+6. Support / Community
+- Join the testing and discussion channel: [ZCash ESP Chat](https://t.me/zcashespchat)
+- Visit: [ZcashEsp](https://zcashesp.com/)
+
+
+########################################################################  
+
+**Thank you for trying ZTip and for paying attention to security and usage guidelines!**
