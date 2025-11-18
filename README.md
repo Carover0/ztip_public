@@ -391,7 +391,8 @@ python3 z‑f.py   # or whichever file is the main script
 The bot automatically creates allowed_users.json on first run if it doesn’t exist. You can pre-fill it with your admin ID:
 ```
 [
-  123456789
+  123456789,
+  987654321
 ]
 ```
 
