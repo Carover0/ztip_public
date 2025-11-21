@@ -431,7 +431,9 @@ Have admin access immediately if their Telegram ID is in allowed_users.json.
 - Visit: [ZcashEsp](https://zcashesp.com/)
 
 
-########################################################  
-> [!TIP]
-> Thanks for trying ZTip! Your feedback helps strengthen the Zcash ecosystem.
+-----------------------------------------------  
+
+Thanks for trying ZTip! Your feedback helps strengthen the Zcash ecosystem.
+
+cΔrovΣr0
 
