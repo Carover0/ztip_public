@@ -1,7 +1,7 @@
 ## **ZTip Bot → Minimal Zcash CLI Tipper**
 
 > [!TIP]
->📺 [video](https://free2z.cash/uploadz/public/c%CE%94rov%CE%A3r0/ztip2.mp4)
+>📺 [video](https://free2z.cash/uploadz/public/c%CE%94rov%CE%A3r0/ztip3.mp4)
 
 ZTip Bot is a Telegram bot inspired by the Zcash terminal, designed to interact with nodes and execute commands remotely while maintaining a clean and secure console-style interface.
 It allows users to receive and send ZEC, check balances, transactions, and addresses, as well as perform basic administrative commands.
